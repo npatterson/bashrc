@@ -36,5 +36,5 @@ hg_all() {
   | uniq | tr -d '\n'
 }
 alias vcbranch="vcprompt -f ' %b'"
-alias vcinfo="vcprompt -f '%m%u%a'"
+alias vcinfo="vcprompt -f '%m%u'"
 PS1="\[$DARK_GRAY\](\h) \$(when_ok '\[$LIGHT_GREEN\]')\$(when_failed '\[$LIGHT_RED\]') \[$WHITE\][\[$CYAN\]\W\[$YELLOW\]\$(vcbranch)\[$LIGHT_RED\]\$(vcinfo)\$(hg_all)\[$WHITE\]] $ \[$RESET\]"

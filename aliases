@@ -4,17 +4,20 @@ alias jrake='jruby -S rake'
 alias svnst="svn st|grep -v '^X'|grep -v '^Performing'|grep -v '^$'"
 alias svnaddall="svn st | grep '^\?' | tr '^\?' ' ' | sed 's/[\\t]*//' | sed 's/[ ]/\\ /g' | xargs svn add"
 alias siw="svn propedit svn:ignore ."
-alias sdm="svn diff|mate"
+alias sdm="svn diff|subl"
 
 
 alias gp="git pull;git submodule init -q;git submodule update"
-alias gdc='git diff --cached|mate'
-alias gdm='git diff|mate'
-alias gsm='git show|mate'
+alias gs='git status -s'
+alias gdc='git diff --cached|subl'
+alias gdm='git diff|subl'
+alias gsm='git show|subl'
+alias gtg='git commit -a'
+alias gcl='git clean -f'
 
 alias hpu='hg pull -u'
 alias hso='hg st; hg out'
-alias hdm='hg diff|mate'
+alias hdm='hg diff|subl'
 alias hgr="hg revert --no-backup"
 
 alias bi='bundle install'
