@@ -6,7 +6,7 @@ alias svnaddall="svn st | grep '^\?' | tr '^\?' ' ' | sed 's/[\\t]*//' | sed 's/
 alias siw="svn propedit svn:ignore ."
 alias sdm="svn diff|subl"
 
-
+alias gg='git clone'
 alias gp="git pull;git submodule init -q;git submodule update"
 alias gs='git status -s'
 alias gdc='git diff --cached|subl'
