@@ -6,19 +6,15 @@ alias svnaddall="svn st | grep '^\?' | tr '^\?' ' ' | sed 's/[\\t]*//' | sed 's/
 alias siw="svn propedit svn:ignore ."
 alias sdm="svn diff|subl"
 
+alias g='git'
 alias gg='git clone'
 alias gp="git pull;git submodule init -q;git submodule update"
 alias gs='git status -s'
-alias gdc='git diff --cached|subl'
-alias gdm='git diff|subl'
-alias gsm='git show|subl'
+alias gdc='git diff --cached'
+alias gdm='git diff'
+alias gsm='git show'
 alias gtg='git commit -a'
 alias gcl='git clean -f'
-
-alias hpu='hg pull -u'
-alias hso='hg st; hg out'
-alias hdm='hg diff|subl'
-alias hgr="hg revert --no-backup"
 
 alias bi='bundle install'
 alias bu='bundle update'
